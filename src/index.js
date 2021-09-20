@@ -5,6 +5,7 @@ const path = require('path');
 //Configuracion (Settings)
 app.set('port',3000);
 app.set('view engine','ejs');
+app.engine('html',require('ejs').renderFile);
 app.set('views',path.join(__dirname,'views'));
 
 //Middlewares
