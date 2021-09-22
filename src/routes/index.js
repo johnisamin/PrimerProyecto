@@ -6,7 +6,7 @@ router.get('/',(req,res)=>{
 });
 
 router.get('/contact',(req,res)=>{
-    res.render('contact.html',{ title: 'Contact Page'});
+    res.render('contact.html',{ title: 'Contacto'});
 });
 
 
