@@ -13,6 +13,7 @@ app.set('views',path.join(__dirname,'views'));
 app.use(require('./routes/index'));
 
 //Static Routes
+app.use(express.static(path.join(__dirname,'public')));
 
 //Listening Server
 app.listen(app.get('port'),() =>{
